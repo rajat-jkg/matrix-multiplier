@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head style="padding: 0px; margin: 0px;">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrix Multiplier</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js"></script>
+</head>
+<body style="padding: 0px; margin: 0px;" width="device">
+    <Header>
+        <h1> Welcome to the Matrix Multiplier</h1>
+        <p>You can mutiply two matrices with this app</p>
+        
+    </Header>
+    <section>
+        <p>Enter the size of first matrix</p>
+        <input type="text" class="order" id="a1"> x <input type="text" class="order" id="a2">
+        <p>Enter the size of second matrix</p>
+        <input type="text" class="order" id="b1"> x <input type="text" class="order" id="b2">
+        <p>Max size is 10x10</p>
+        <br>
+        <button class="button" id="ent0" onclick="store()" style="display: block;">Enter</button>      
+        <br>
+        <br>
+        <div id="m1" style="display: none">
+            <p id="matrix1"> </p>
+            <input type="number" id="a" class="number" style="display: block;"><tr>  </tr><button class="button" id ="ent1" onclick="matr1()">Enter</button>
+            <p id="mat1"></p>
+            <br>
+        </div>
+        <div id="m2" style="display: none">
+            <p id = "matrix2"> </p>
+            <input type="number" id="b" class="number"><tr>  </tr><button class="button" id="ent2" onclick="matr2()">Enter</button>
+            <p id="mat2"> </p>
+        </div>
+        <p id="result"> </p>
+    </section>
+    <div style="height: 60px;"></div>
+    <button class="button" onclick="location.reload()">Reload</button>
+    <footer>
+        This app developed by Rajat Gupta <br>
+        Reload page if you face a glitch or want to multipy another set of matrices
+    </footer>
+</body>
+</html>
